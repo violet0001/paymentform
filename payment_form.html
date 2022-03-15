@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="https://media.istockphoto.com/photos/texture-of-blue-paper-picture-id945663596?k=20&m=945663596&s=612x612&w=0&h=f6Zhyxp4rZAYn98qoPYnglSai6BefKLSKtgO576wQFo=">
+    <h1 class="center"><b>Payment Form</b></h1>
+    <p class="center">Required Fields are followed by *</h5>
+    <h2>Contact Information</h2>
+    <p>Name: * <input type="text" name="Name" required></p>
+    <fieldset>
+        <legend>Gender *</legend>
+        <p> Male <input type="radio" name="gender" id="Male" required>
+            Female <input type="radio" name="gender" id="Female" required>
+            Transgender <input type="radio" name="gender" id="Transgender" required></p>
+    </fieldset>
+    <p>Address: * <textarea name="address" id="address" cols="100" rows="8" required></textarea></p>
+    <p>Email: * <input type="email" name="email" id="email" required></p>
+    <p>PinCode: * <input type="number" name="PinCode" id="PinCode" required></p>
+    <hr>
+    <h1 class="center">Payment Information</h1>
+    <p>Card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="American Express">American Express</option>
+        </select>
+    </p>
+    <p>Card Number: * <input type="number" name="cardnumber" id="cardnumber" required></p>
+    <p>Expiration Date: * <input type="date" name="expdate" id="expdate" required> </p>
+    <p>CVV: * <input type="password" name="CVV" id="CVV" required></p>
+    <input type="Submit" name="Pay Now">
+
+</html>
